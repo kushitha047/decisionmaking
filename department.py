@@ -15,7 +15,6 @@ Sample Input:
 Sample Output:
 L3
 ***
-# Function to determine the lab with minimal seating capacity
 def find_minimal_lab(a, b, c):
     if a <= b and a <= c:
         return "L1"
@@ -23,12 +22,8 @@ def find_minimal_lab(a, b, c):
         return "L2"
     else:
         return "L3"
-
-# Input: Seating capacities of L1, L2, and L3
 a = int(input())
 b = int(input())
 c = int(input())
-
-# Output: Lab with minimal seating capacity
 minimal_lab = find_minimal_lab(a, b, c)
 print(minimal_lab)
