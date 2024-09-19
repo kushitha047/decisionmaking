@@ -12,11 +12,8 @@ Sample Input:
 Sample Output:
 6 less than 8
 ***
-# Input: Two integers from the user
 x = int(input())
 y = int(input())
-
-# Comparing the integers and printing the result
 if x == y:
     print(f"{x} and {y} are equal")
 elif x > y:
