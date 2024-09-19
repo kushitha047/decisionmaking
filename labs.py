@@ -17,13 +17,10 @@ Sample Input:
 Sample Output:
 2 
 ***
-# Read the inputs
-a = int(input())  # Seating capacity of L1
-b = int(input())  # Seating capacity of L2
-c = int(input())  # Seating capacity of L3
-n = int(input())  # Number of students
-
-# Determine how many labs can accommodate the students
+a = int(input())  
+b = int(input())  
+c = int(input())
+n = int(input())  
 count = 0
 if a >= n:
     count += 1
@@ -31,6 +28,4 @@ if b >= n:
     count += 1
 if c >= n:
     count += 1
-
-# Output the result
 print(count, "program")
