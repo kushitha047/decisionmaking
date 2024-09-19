@@ -47,7 +47,6 @@ MSH
 Sample Output:
 90000.00
 ***
-# Function to calculate the total fee amount based on student type
 def calculate_fee(student_type, tuition_fee, other_fee):
     if student_type == "MSDS":  # Merit Seat Day Scholar
         total_fee = tuition_fee + other_fee
@@ -59,14 +58,9 @@ def calculate_fee(student_type, tuition_fee, other_fee):
         total_fee = (1.5 * tuition_fee) + other_fee
     else:
         return "Invalid student type"
-    
     return f"{total_fee:.2f}"
-
-# Input: Student type, tuition fee, and bus/hostel fee
 student_type = input()
 tuition_fee = float(input())
 other_fee = float(input())
-
-# Output: Total fee amount
 total_fee = calculate_fee(student_type, tuition_fee, other_fee)
 print(total_fee)
