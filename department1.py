@@ -17,27 +17,21 @@ L3
 Sample Output:
 L1
 ***
-# Read the inputs
-a = int(input())  # Seating capacity of L1
-b = int(input())  # Seating capacity of L2
-c = int(input())  # Seating capacity of L3
-allocated_lab = input().strip()  # Lab allocated for ACE training
-
-# Determine the minimum seating capacity lab amongst available labs
+a = int(input())  
+b = int(input())  
+c = int(input())  
+allocated_lab = input().strip()  
 if allocated_lab == 'L1':
-    # L1 is allocated, compare L2 and L3
     if b < c:
         print("L2 program")
     else:
         print("L3 program")
 elif allocated_lab == 'L2':
-    # L2 is allocated, compare L1 and L3
     if a < c:
         print("L1 program")
     else:
         print("L3 program")
 elif allocated_lab == 'L3':
-    # L3 is allocated, compare L1 and L2
     if a < b:
         print("L1 program")
     else:
