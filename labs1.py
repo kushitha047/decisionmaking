@@ -17,13 +17,10 @@ Sample Input:
 Sample Output:
 L1
 ***
-# Read the inputs
-x = int(input())  # Seating capacity of L1
-y = int(input())  # Seating capacity of L2
-z = int(input())  # Seating capacity of L3
-n = int(input())  # Number of students
-
-# Determine the suitable lab
+x = int(input())  
+y = int(input())  
+z = int(input()) 
+n = int(input()) 
 suitable_lab = None
 if x >= n:
     suitable_lab = ("L1", x)
@@ -33,8 +30,6 @@ if y >= n:
 if z >= n:
     if suitable_lab is None or z > suitable_lab[1]:
         suitable_lab = ("L3", z)
-
-# Output the result
 if suitable_lab:
     print(suitable_lab[0], "program")
 else:
