@@ -27,7 +27,6 @@ Sample Input:
 78
 Sample Output:C
 ***
-# Function to determine the grade based on marks
 def get_grade(marks):
     if marks > 100:
         return "Invalid Input"
@@ -45,10 +44,6 @@ def get_grade(marks):
         return "E"
     else:
         return "F"
-
-# Input: Marks scored by the student
 marks = int(input())
-
-# Output: Corresponding grade or "Invalid Input"
 grade = get_grade(marks)
 print(grade)
