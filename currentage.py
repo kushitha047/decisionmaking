@@ -13,18 +13,13 @@ Sample Input:
 Sample Output:
 38
 ***
-# Function to calculate the age
 def calculate_age(birth_year, current_year):
     if current_year >= birth_year:
         age = current_year - birth_year
     else:
         age = (100 - birth_year) + current_year
     return age
-
-# Input: Two integers representing the last two digits of the birth year and current year
 birth_year = int(input())
 current_year = int(input())
-
-# Output: User's current age
 age = calculate_age(birth_year, current_year)
 print(age)
