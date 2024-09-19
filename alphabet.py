@@ -11,7 +11,6 @@ e
 Sample Output:
 Vowel
 ***
-# Function to check if the character is a vowel, consonant, or not an alphabet
 def check_character(char):
     if char.isalpha():
         if char.lower() in 'aeiou':
@@ -20,10 +19,6 @@ def check_character(char):
             return "Consonant"
     else:
         return "Not an alphabet"
-
-# Input: A single character from the user
 char = input()
-
-# Output: Vowel, Consonant, or Not an alphabet
 result = check_character(char)
 print(result)
